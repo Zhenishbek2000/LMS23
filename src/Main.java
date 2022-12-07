@@ -12,26 +12,23 @@ public class Main {
             linkedList.add(random.nextInt(0,2));
 
         }
-        sort(massive);
-        sort(arrayList);
-        sort(linkedList);
+        System.out.println(Arrays.toString(sort(massive)));
+        System.out.println(sort(arrayList));
+        System.out.println(sort(linkedList));
     }
-    public static void sort(int[]massive){
+    public static int[] sort(int[]massive){
         Arrays.sort(massive);
-        for (int i : massive) {
-            System.out.print(i+"  ");
-        }
+
+        return massive;
     }
-    public static void sort(ArrayList<Integer>arrayList){
+    public static ArrayList<Integer> sort(ArrayList<Integer>arrayList){
         Collections.sort(arrayList);
-        for (Integer integer : arrayList) {
-            System.out.println(integer+"  ");
-        }
+
+        return arrayList;
     }
-    public static void sort(LinkedList<Integer>linkedList){
+    public static LinkedList<Integer> sort(LinkedList<Integer>linkedList){
         Collections.sort(linkedList);
-        for (Integer integer : linkedList) {
-        }
-            System.out.println(linkedList+"  ");
+
+        return linkedList;
     }
 }
